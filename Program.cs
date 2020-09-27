@@ -39,11 +39,22 @@ namespace Geometry_assignment
                 return;
             }
 
+
             ////Calculate length of line 1 by using it's coordinates
+
+
+            ////Calculate length of line 1 by using it's coordinates
+
+            ////Taking co-ordinates of line1 and printing length of line 1
+
+
             InputLine(ref line1Pt1, ref line1Pt2);
             double line1Length;
             line1Length = FindLength(line1Pt1, line1Pt2);
             Console.WriteLine("Length of first line is " + line1Length);
+
+
+
 
             ////Taking points of line1 and printing length of line 2
             InputLine(ref line1Pt1, ref line1Pt2);
@@ -57,6 +68,7 @@ namespace Geometry_assignment
 
             else Console.WriteLine("The line are not of equal length");
 
+
             //Comparison of lines
             if (line1Length == line2Length)
                 Console.WriteLine("Both lines have equal length");
@@ -66,6 +78,7 @@ namespace Geometry_assignment
 
             else
                 Console.WriteLine("First line is shorter than the second one");
+
 
 
         }
