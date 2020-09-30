@@ -1,9 +1,23 @@
 ﻿using System;
 
-namespace Geometry_assignment
+namespace Program 
 {
     class Program
     {
+        public static int CompareTo(double length1, double length2)
+        {
+            double line1Length = length1;
+            double line2Length = length2;
+
+            //Checking for equality and other comparisions
+            if (line1Length == line2Length)
+                Console.WriteLine("Both lines have equal length");
+            else if (line1Length > line2Length)
+                Console.WriteLine("First line is longer than the second one");
+            else
+                Console.WriteLine("First line is shorter than the second one");
+            return 0;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Geometry assignment");
@@ -24,7 +38,10 @@ namespace Geometry_assignment
                 return length;
             }
 
+
+            ////Taking input for 1st line          
             ////Provide Inputs for co-ordinates of first line:         
+
             static void InputLine(ref int[] point1, ref int[] point2)
             {
                 Console.WriteLine("Enter X-Coordinate of 1st point");
@@ -40,12 +57,16 @@ namespace Geometry_assignment
             }
 
 
+            ////Taking points of line1 and printing length of line 1
+
+
             ////Calculate length of line 1 by using it's coordinates
 
 
             ////Calculate length of line 1 by using it's coordinates
 
             ////Taking co-ordinates of line1 and printing length of line 1
+
 
 
             InputLine(ref line1Pt1, ref line1Pt2);
@@ -56,11 +77,16 @@ namespace Geometry_assignment
 
 
 
+
+
             ////Taking points of line1 and printing length of line 2
             InputLine(ref line1Pt1, ref line1Pt2);
             double line2Length;
             line2Length = FindLength(line1Pt1, line1Pt2);
             Console.WriteLine("Length of first line is " + line2Length);
+
+
+            CompareTo(line1Length, line2Length);
 
             //Checking for equality
             if (line1Length == line2Length)
